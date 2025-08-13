@@ -249,7 +249,6 @@ export class Game implements AfterViewInit, OnDestroy {
             this.grid[this.grid.length-1][Math.floor(Math.random() * this.gridSize)],
           ]
           const randomIndex = Math.floor(Math.random()* 4)
-          console.log(randomIndex)
           const cell = randomSide[randomIndex] 
           if (!cell.occupant) {
             const zombieTexture = new THREE.TextureLoader().load('wvzfront/assets/zom.png')
