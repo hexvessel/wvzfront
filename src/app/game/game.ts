@@ -150,7 +150,7 @@ export class Game implements AfterViewInit, OnDestroy {
   
 
     // Test agents
-    const texture = new THREE.TextureLoader().load('assets/wizinviz.png');
+    const texture = new THREE.TextureLoader().load('wvzfront/assets/wizinviz.png');
     texture.minFilter = THREE.NearestFilter;
     texture.magFilter = THREE.NearestFilter;
     //const zombieTexture = new THREE.TextureLoader().load('/assets/zom.png')
@@ -252,7 +252,7 @@ export class Game implements AfterViewInit, OnDestroy {
           console.log(randomIndex)
           const cell = randomSide[randomIndex] 
           if (!cell.occupant) {
-            const zombieTexture = new THREE.TextureLoader().load('assets/zom.png')
+            const zombieTexture = new THREE.TextureLoader().load('wvzfront/assets/zom.png')
             const zombie = new Zombie(zombieTexture, 10);
             zombie.position.set(cell.x, 0.1, cell.z);
             cell.occupant = zombie;

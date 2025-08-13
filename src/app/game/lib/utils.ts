@@ -41,11 +41,11 @@ export function generateGrid(
 // const white = new THREE.MeshPhongMaterial({ color: 0xffffff });
   
   const terrain = [
-    new THREE.SpriteMaterial({map:new THREE.TextureLoader().load('assets/terrain/terrain1.png')}),
-    new THREE.SpriteMaterial({map:new THREE.TextureLoader().load('assets/terrain/terrain2.png')}),
-    new THREE.SpriteMaterial({map:new THREE.TextureLoader().load('assets/terrain/terrain3.png')}),
-    new THREE.SpriteMaterial({map:new THREE.TextureLoader().load('assets/terrain/terrain4.png')}),
-    new THREE.SpriteMaterial({map:new THREE.TextureLoader().load('assets/terrain/terrain5.png')}),
+    new THREE.SpriteMaterial({map:new THREE.TextureLoader().load('wvzfront/assets/terrain/terrain1.png')}),
+    new THREE.SpriteMaterial({map:new THREE.TextureLoader().load('wvzfront/assets/terrain/terrain2.png')}),
+    new THREE.SpriteMaterial({map:new THREE.TextureLoader().load('wvzfront/assets/terrain/terrain3.png')}),
+    new THREE.SpriteMaterial({map:new THREE.TextureLoader().load('wvzfront/assets/terrain/terrain4.png')}),
+    new THREE.SpriteMaterial({map:new THREE.TextureLoader().load('wvzfront/assets/terrain/terrain5.png')}),
   ]
   for (let x = 0; x < gridSize * 2; x++) {
     const gridRow: GridPosition[] = [];
