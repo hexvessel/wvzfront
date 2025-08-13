@@ -42,7 +42,7 @@ export function createMouseHandlers(game: Game) {
         const direction = new THREE.Vector3();
         direction.subVectors(fireballTarget, origin).normalize();
 
-        const texture = new THREE.TextureLoader().load('wvzfront/assets/fireball.png')
+        const texture = new THREE.TextureLoader().load('assets/fireball.png')
         const fireball = new Fireball(texture, direction, origin, fireballTarget )
         scene.add(fireball)
         game.allSpells.push(fireball)
